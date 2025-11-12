@@ -1,5 +1,81 @@
+// import React from 'react'
+// import Tittle from './components/description/tittle';
+
+// const MyProjectsTable = () => {
+
+//   const baseProjects = [
+//     {
+//       name: "Portfolio Website",
+//       tech: "React, Tailwind CSS",
+//       description: "Personal website to showcase my skills and projects.",
+//       publisher: "Josue",
+//     },
+//     {
+//       name: "Task Manager App",
+//       tech: "React, Node.js, MongoDB",
+//       description: "A simple full-stack CRUD app for managing tasks.",
+//       publisher: "Josue",
+//     },
+//     {
+//       name: "E-commerce Store",
+//       tech: "Next.js, Stripe, Firebase",
+//       description: "A responsive online store with payment integration.",
+//       publisher: "Josue",
+//     },
+//     {
+//       name: "Machine Learning",
+//       tech: "python",
+//       description: "Dog's Breed Classification",
+//       publisher: "Josue",
+//     },
+//   ];
+
+//   //duplicate to make mare rows
+//   // const myProject = 
+  
+
+//   return (
+//     <div className="overflow-x-auto p-20 text-center">
+//       <Tittle head1="My Projects" />
+
+//       <table className="min-w-full bg-black border border-gray-700 rounded-lg overflow-hidden text-left">
+//         <thead className="bg-red-500 text-white">
+//           <tr>
+//             <th className="py-3 px-4 ">Project Name</th>
+//             <th className="py-3 px-4 ">Tech Used</th>
+//             <th className="py-3 px-4 ">Description</th>
+//             <th className="py-3 px-4 ">Publisher</th>
+//           </tr>
+//         </thead>
+//         <tbody>
+//           {myproject.map((proj, index) => (
+//             <tr
+//               key={index}
+//               className="border-b border-gray-700 hover:bg-gray-800 transition-all"
+//             >
+//               <td className="py-3 px-4 text-white font-semibold">
+//                 {proj.name}
+//               </td>
+//               <td className="py-3 px-4 text-gray-300 border border-gray-700">
+//                 {proj.tech}
+//               </td>
+//               <td className="py-3 px-4 text-gray-400">{proj.description}</td>
+//               <td className="py-3 px-4 text-red-400 border border-gray-700">
+//                 {proj.publisher}
+//               </td>
+//             </tr>
+//           ))}
+//         </tbody>
+//       </table>
+      
+//     </div>
+//   );
+// }
+
+// export default MyProjectsTable;
+
 import React, { useState } from "react";
-import Tittle from "./components/description/tittle";
+import Tittle from "../components/description/tittle";
 
 const MyProjectsTable = () => {
   const baseProjects = [
@@ -89,9 +165,7 @@ const MyProjectsTable = () => {
             </tr>
           ))}
         </tbody>
-      </table>  
-
-      
+      </table>
 
       {/* Pagination Controls */}
       <div className="flex justify-center items-center gap-4 mt-6">

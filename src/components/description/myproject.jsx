@@ -30,7 +30,7 @@ const MyProject = () => {
   return (
     <div className="justify-items-center">
       <Tittle1 head1="My Projects" head2="Some Of My Distinguished Works" />
-      <div className="grid grid-cols-3 space-x-8 space-y-8">
+      <div className="grid grid-cols-3 space-x-3 sm:space-x-2 md:space-x-2 space-y-2 md:space-y-4 sm:space-y-2">
         {Projects.map((item, index) => (
           <div>
             <SecondCord 

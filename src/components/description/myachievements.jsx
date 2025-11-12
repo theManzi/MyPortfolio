@@ -27,7 +27,7 @@ const MyAchievements = () => {
         head1="My Achievements"
         head2="Some of My Major Achievements"
       />
-      <div className="flex space-x-8">
+      <div className="gap-3 grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {data.map((item, index) => (
           <div>
             <SecondCord img={item.img} p1={item.p1} p2={item.p2} link="/achievements" />

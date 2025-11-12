@@ -31,7 +31,9 @@ function HomePage() {
                 <section id="home">
                   <Hello />
                 </section>
-                <section id="about">
+                <section
+                  id="about"
+                >
                   <About />
                 </section>
                 <section id="experience">

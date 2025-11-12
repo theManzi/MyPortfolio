@@ -25,7 +25,7 @@ const Responsibilities = () => {
                 head1="Position of Responsibilities"
                 head2="Some of My valunteer Work"
             />
-            <div className='flex space-x-8'>
+            <div className='flex space-x-3 '>
                 {
                     Responsibilities.map((item, index) => (
                         <div>

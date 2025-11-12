@@ -4,86 +4,79 @@ import Tittle from "./tittle.jsx";
 
 const About = () => {
   const languages = [
-    {
-      name: "JavaScript",
-      imgSrc: "/js.png",
-    },
-    {
-      name: "Python",
-      imgSrc: "/python.png",
-    },
-    {
-      name: "CSS",
-      imgSrc: "/css.png",
-    },
-    {
-      name: "C++",
-      imgSrc: "/c++.png",
-    },
-
-    {
-      name: "reactJS",
-      imgSrc: "/react.png",
-    },
-    {
-      name: "HTML",
-      imgSrc: "/html.png",
-    },
+    { name: "JavaScript", imgSrc: "/js.png" },
+    { name: "Python", imgSrc: "/python.png" },
+    { name: "CSS", imgSrc: "/css.png" },
+    { name: "C++", imgSrc: "/c++.png" },
+    { name: "ReactJS", imgSrc: "/react.png" },
+    { name: "HTML", imgSrc: "/html.png" },
   ];
+
   return (
-    <div className="bg-[#020312] mt-15">
-      <div className="flex space-x-10 bg-[#020312]  items-center justify-center p-5">
-        <div className="m-5 p-18 px-20  bg-white">
-          <div className="w-80 h-80 rounded-full">
+    <div className="bg-[#020312] py-16 px-6 md:px-16 lg:px-24">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
+        
+          <div className="w-72 h-72 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-white/20 shadow-lg">
             <img
               src="/manzi.jpg"
               alt="profile"
               className="w-80 h-80 rounded-full "
             />
           </div>
-        </div>
-        <div className="m-20 bg-[#020312] rounded-lg space-y-2">
+        
+
+      
+        <div className="text-center md:text-left max-w-2xl space-y-5">
           <Tittle head1="About Me" head2="Hi, My name is Josue101 !!" />
-          <p className="text-xl italic text-white/40">
-            I am a B.Tech First Year Student of Kepler College, Pursuing My Degree
-            in Information System . I have a keen Interest in Problems Solving and Finding new
-            and Dynamic Ideas.<br></br>
-            <br></br>I am a Machine Learning Enthusiast & Front-end Web
-            Developer. I can provide clean code and pixel perfect design.
-            <br></br>
-            <br></br>
+          <p className="text-white/60 text-base sm:text-lg leading-relaxed italic">
+            I am a B.Tech First Year Student of Kepler College, pursuing my
+            degree in Information System. I have a keen interest in problem
+            solving and finding new, dynamic ideas.
+            <br />
+            <br />I am a Machine Learning enthusiast and Front-end Web
+            Developer. I can provide clean code and pixel-perfect design.
           </p>
-          <div className="text-xl italic text-white mb-10">
-            1. Problem Solving &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. DSA
-            <br></br>
-            3. Machine Learning &nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            4. Web Development
+
+          <div className="text-white italic text-base sm:text-lg">
+            <ul className="grid grid-cols-2 gap-y-2 list-disc list-inside">
+              <li>Problem Solving</li>
+              <li>DSA</li>
+              <li>Machine Learning</li>
+              <li>Web Development</li>
+            </ul>
           </div>
-          <PrimaryBtn name="Contact Me" link="/Contact" />
+
+          <div className="flex justify-center md:justify-start mt-4">
+            <PrimaryBtn name="Contact Me" link="/Contact" />
+          </div>
         </div>
       </div>
-      <div>
-        <h1 className="text-white italic text-4xl text-center">Laguages</h1>
-        <div className="h-1 w-25 block bg-red-500 rounded-2xl ml-145 mt-4"></div>
-        <div className="grid grid-cols-3 items-center justify-center gap-10 space-y-10 p-20 ">
+
+      
+      <div className="mt-20">
+        <h1 className="text-white italic text-3xl sm:text-4xl text-center">
+          Languages
+        </h1>
+        <div className="h-1 w-24 bg-red-500 rounded-2xl mx-auto mt-3"></div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
           {languages.map((language, index) => (
             <div
               key={index}
               className="group flex flex-col items-center space-y-2 hover:translate-y-2 transition duration-300"
             >
-              <div className="relative overflow-hidden w-23 h-23 bg-white rounded-full flex items-center justify-center ">
+              <div className="relative overflow-hidden w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-full flex items-center justify-center shadow-md">
                 <img
                   src={language.imgSrc}
                   alt={language.name}
-                  className="w-12 h-12 z-10"
+                  className="w-10 h-10 sm:w-12 sm:h-12 z-10"
                 />
-                <div className="absolute top-0 left-0 w-12 h-24 bg-gray-700/60 block"></div>
+                <div className="absolute top-0 left-0 w-full h-full bg-gray-700/50 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
-
-              <h2 className="text-white italic text-2xl">{language.name}</h2>
-              <div className="group-hover:bg-red-500 h-1 w-20 block rounded-2xl ml-3 mt-2"></div>
+              <h2 className="text-white italic text-lg sm:text-xl">
+                {language.name}
+              </h2>
+              <div className="group-hover:bg-red-500 h-1 w-12 sm:w-16 bg-transparent rounded-2xl mt-1 transition"></div>
             </div>
           ))}
         </div>

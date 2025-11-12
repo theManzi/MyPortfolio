@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
   const navitems = [
@@ -13,6 +13,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     
+  const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -36,15 +37,17 @@ const Navbar = () => {
     } else {
       navigate("/", { state: { scrollTo: id } });
     }
+    setMenuOpen(false);
   };
     return (
-      <div className="fixed top-0 left-0 flex items-center gap-4 justify-between italic bg-black border-b border-white/50 px-8 pt-1 w-full z-50">
-       
+      <nav className="fixed top-0 left-0 gap-4 italic bg-black border-b border-white/50 px-8 pt-1 w-screen z-50 shadow-md">
+        <div className="flex justify-between items-center max-w-7xl mx-auto">
         <h1 className="text-2xl text-white  ">
           Portfo<span className="text-red-500 ">lio</span>
         </h1>
 
-        <div className="flex gap-1">
+        {/* desktop menu */}
+        <div className="hidden md:flex gap-4">
           {navitems.map((nav, index) => (
             <h1
               key={index}
@@ -55,7 +58,32 @@ const Navbar = () => {
             </h1>
           ))}
         </div>
+
+          {/* Hamburger Icon (mobile) */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="text-white text-3xl md:hidden focus:outline-none"
+        >
+          {menuOpen ? "✖" : "☰"}
+        </button>
       </div>
+
+      {/* Mobile Menu (Dropdown) */}
+      {menuOpen && (
+        <div className="bg-black w-full flex flex-col items-center md:hidden border-t border-white/10">
+          {navitems.map((nav, index) => (
+            <h1
+              key={index}
+              className="text-white text-lg w-full text-center py-3 hover:bg-red-500 duration-300 cursor-pointer"
+              onClick={() => handleNavigation(nav.id)}
+            >
+              {nav.name}
+            </h1>
+          ))}
+        </div>
+      )}
+
+        </nav>
     );
   };
 

@@ -2,7 +2,7 @@ import React from 'react'
 import HomePage from './page/home'
 
 const App = () => {
-  return (
+return (
     <div>
       <HomePage/>
     </div>

@@ -4,10 +4,10 @@ import React from 'react'
 const FirstCord = ({img, campany, position, p1, p2}) => {
    
 
-  return (
+  return ( 
     <div className="group bg-[#020312] italic">
-      <div class="group-hover:border-t-3 group-hover:border-red-500 h-90 w-295 rounded-xl hover:-translate-y-1 transition duration-300 bg-white/10 cursor-pointer">
-        <span class="block p-10">
+      <div class="group-hover:border-t-3 group-hover:border-red-500 rounded-xl hover:-translate-y-1 transition duration-300 bg-white/10 cursor-pointer">
+        <span class="block p-10 sm:h-20 sm:w-80 md:h-90 md:w-295  ">
           <img
             src={img}
             alt="Josue Izere"

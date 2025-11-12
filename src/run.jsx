@@ -89,7 +89,9 @@ const MyProjectsTable = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table>  
+
+      
 
       {/* Pagination Controls */}
       <div className="flex justify-center items-center gap-4 mt-6">

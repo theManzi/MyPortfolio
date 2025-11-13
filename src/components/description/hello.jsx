@@ -3,7 +3,7 @@ import PrimaryBtn from "../Button/primaryBtn";
 
 const Hello = () => {
   return (
-    <div className="relative bg-[#020312] italic h-screen w-full overflow-hidden flex px-4 sm:px-8 md:px-16 p-15">
+    <div className="relative bg-[#020312] italic h-screen w-full overflow-hidden flex px-4 sm:px-8 md:p-16 p-15">
       {/* Background Video */}
       <video
         autoPlay
@@ -33,7 +33,7 @@ const Hello = () => {
           A Software Developer and Programming Enthusiast
         </h1>
 
-        <div className="flex sm:justify-start">
+        <div className="flex sm:justify-start md:justify-start" >
           <PrimaryBtn name="Download Resume" link="#" />
         </div>
       </div>

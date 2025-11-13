@@ -20,12 +20,12 @@ const Responsibilities = () => {
 
 
     return (
-        <div className='justify-items-center'>
+        <div className='justify-items-center text-center'>
             <Tittle1
                 head1="Position of Responsibilities"
                 head2="Some of My valunteer Work"
             />
-            <div className='flex space-x-3 '>
+            <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-3 '>
                 {
                     Responsibilities.map((item, index) => (
                         <div>

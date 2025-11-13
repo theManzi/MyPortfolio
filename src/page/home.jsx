@@ -18,7 +18,7 @@ import Achievements from "./achievements.jsx";
 
 function HomePage() {
   return (
-    <div className="relative bg-[#020312] ">
+    <div className="relative bg-[#020312] max-w-screen">
       <BrowserRouter>
         <section>
           <Navbar id="" />

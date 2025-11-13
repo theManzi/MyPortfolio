@@ -1,6 +1,7 @@
 import React from 'react'
 import Tittle1 from './tittle1'
 import SecondCord from '../cards/secondcord';
+import PrimaryBtn from '../Button/primaryBtn';
 
 const MyProject = () => {
 
@@ -30,7 +31,7 @@ const MyProject = () => {
   return (
     <div className="justify-items-center">
       <Tittle1 head1="My Projects" head2="Some Of My Distinguished Works" />
-      <div className="grid grid-cols-3 space-x-3 sm:space-x-2 md:space-x-2 space-y-2 md:space-y-4 sm:space-y-2">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2">
         {Projects.map((item, index) => (
           <div>
             <SecondCord 
@@ -42,6 +43,7 @@ const MyProject = () => {
           </div>
         ))}
       </div>
+      <PrimaryBtn name="View Mare" link='/myprojects'/>
     </div>
   );
 }

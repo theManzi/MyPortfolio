@@ -14,13 +14,13 @@ const About = () => {
 
   return (
     <div className="bg-[#020312] py-16 px-6 md:px-16 lg:px-24">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-10 justify-center items-center">
         
-          <div className="w-72 h-72 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-white/20 shadow-lg">
+          <div className="bg-white xl:w-100 xl:h-100 sm:w-30 sm:h-30 md:h-70 md:w-70 flex justify-center image-center overflow-hidden border-4 border-white/20 shadow-lg max-w-screen">
             <img
               src="/manzi.jpg"
               alt="profile"
-              className="w-80 h-80 rounded-full "
+              className="xl:w-80 xl:h-80 sm:w-30 sm:h-30 md:h-60 md:w-60 rounded-full mt-8"
             />
           </div>
         
@@ -59,7 +59,7 @@ const About = () => {
         </h1>
         <div className="h-1 w-24 bg-red-500 rounded-2xl mx-auto mt-3"></div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
           {languages.map((language, index) => (
             <div
               key={index}

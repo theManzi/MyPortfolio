@@ -14,19 +14,19 @@ const About = () => {
 
   return (
     <div className="bg-[#020312] py-16 px-6 md:px-16 lg:px-24">
-      <div className="flex flex-col md:flex-row gap-10 md:gap-10 justify-center items-center">
+      <div className="flex flex-col  md:flex-col xl:flex-row xl:gap-10 gap-10 md:gap-10 justify-center items-center">
         
-          <div className="bg-white xl:w-100 xl:h-100 sm:w-30 sm:h-30 md:h-70 md:w-70 flex justify-center image-center overflow-hidden border-4 border-white/20 shadow-lg max-w-screen">
+          <div className="bg-white w-70 h-70 xl:w-95 xl:h-95 md:h-80 md:w-80 justify-center image-center overflow-hidden border-4 border-white/20 shadow-lg max-w-screen">
             <img
               src="/manzi.jpg"
               alt="profile"
-              className="xl:w-80 xl:h-80 sm:w-30 sm:h-30 md:h-60 md:w-60 rounded-full mt-8"
+              className="w-60 h-60 xl:w-80 xl:h-80  md:h-70 md:w-70 rounded-full m-4 xl:m-6"
             />
           </div>
         
 
       
-        <div className="text-center md:text-left max-w-2xl space-y-5">
+        <div className="text-center md:text-center sm:text-center lg:text-left max-w-2xl space-y-5">
           <Tittle head1="About Me" head2="Hi, My name is Josue101 !!" />
           <p className="text-white/60 text-base sm:text-lg leading-relaxed italic">
             I am a B.Tech First Year Student of Kepler College, pursuing my
@@ -59,7 +59,7 @@ const About = () => {
         </h1>
         <div className="h-1 w-24 bg-red-500 rounded-2xl mx-auto mt-3"></div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
           {languages.map((language, index) => (
             <div
               key={index}

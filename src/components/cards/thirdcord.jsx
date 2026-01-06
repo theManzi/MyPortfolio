@@ -7,7 +7,7 @@ const ThirdCord = ({img, p1, p2}) => {
         <img
           src={img}
           alt="Achievement"
-          class="md:w-135 md:h-80 mb-4 sm:w-67 sm:h-40 lg:w-200 lg:h-95"
+          class="w-80 h-40 md:w-135 md:h-80 mb-4 sm:w-67 sm:h-40 lg:w-200 lg:h-95"
         />
         <p class="text-red-400 mb-2 ">{p1}</p>
         <p class="text-white text-2xl md:text-xl sm:text-sm">{p2}</p>

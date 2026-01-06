@@ -3,7 +3,7 @@ import React from "react";
 const FirstCord = ({ img, campany, position, p1, p2 }) => {
   return (
     <div className="group bg-[#020312] italic flex justify-center">
-      <div className="group-hover:border-t-4 group-hover:border-red-500 rounded-xl hover:-translate-y-1 transition duration-300 bg-white/10 cursor-pointer max-w-screen sm:w-100 md:w-180 lg:w-300 gap-2">
+      <div className="group-hover:border-t-4 group-hover:border-red-500 rounded-xl hover:-translate-y-1 transition duration-300 bg-white/10 cursor-pointer max-w-screen w-85 sm:w-100 md:w-180 lg:w-300 gap-2">
         <span className="block p-6 sm:p-4 md:p-6">
           <img
             src={img}

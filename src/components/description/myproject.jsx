@@ -7,24 +7,28 @@ const MyProject = () => {
 
   const Projects = [
     {
-      img: "/library.png",
+      img: "/portfolio.png",
       p1: "Web App development",
-      p2: "Library Management System",
+      p2: "Personal website.",
+      link: "https://manzi-izere-josue.vercel.app/",
     },
     {
-      img: "/weather.png",
+      img: "/codeflow.png",
       p1: "Web App Development",
-      p2: "Weather Forecasting App",
+      p2: "code faster with codeflow.",
+      link: "https://josue-modern-ui-ux-rouge-phi.vercel.app/",
     },
     {
-      img: "/dog.png",
-      p1: "Machine Learning",
-      p2: "Dog's Breed Classification",
+      img: "/colorlib.png",
+      p1: "Web App Development",
+      p2: "Colorlib Template.",
+      link: "https://manzijsecondproject.netlify.app/",
     },
     {
-      img: "/boston.png",
-      p1: "Machine Learning",
-      p2: "Boston House Price Prediction",
+      img: "/plantInventory.png",
+      p1: "Full Stack Development",
+      p2: "plantventory",
+      link: "https://crud-auth-josue.netlify.app/",
     },
   ];
 
@@ -38,7 +42,7 @@ const MyProject = () => {
                img={item.img}
                p1={item.p1}
               p2={item.p2}
-              link='/myprojects'
+              link={item.link}
             />
           </div>
         ))}

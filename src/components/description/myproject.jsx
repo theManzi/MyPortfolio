@@ -1,10 +1,9 @@
-import React from 'react'
-import Tittle1 from './tittle1'
-import SecondCord from '../cards/secondcord';
-import PrimaryBtn from '../Button/primaryBtn';
+import React from "react";
+import Tittle1 from "./tittle1";
+import SecondCord from "../cards/secondcord";
+import PrimaryBtn from "../Button/primaryBtn";
 
 const MyProject = () => {
-
   const Projects = [
     {
       img: "/portfolio.png",
@@ -38,18 +37,18 @@ const MyProject = () => {
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2">
         {Projects.map((item, index) => (
           <div>
-            <SecondCord 
-               img={item.img}
-               p1={item.p1}
+            <SecondCord
+              img={item.img}
+              p1={item.p1}
               p2={item.p2}
               link={item.link}
             />
           </div>
         ))}
       </div>
-      <PrimaryBtn name="View Mare" link='/myprojects'/>
+      <PrimaryBtn name="View Mare" link="/myprojects" />
     </div>
   );
-}
+};
 
-export default MyProject
+export default MyProject;

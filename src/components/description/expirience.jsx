@@ -9,7 +9,7 @@ const ExpirienceSection = () => {
       <Tittle head1="My Experience" />
       <FirstCord
         img={"/technical.png"}
-        campany={"JosueforJosue"}
+        campany={"ODF CAMPANY"}
         position={"Technical Content Writer"}
         p1={
           " • Created Multiple Software Development Projects with their detailed Documentation."

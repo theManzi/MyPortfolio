@@ -5,14 +5,14 @@ import Tittle1 from "./tittle1";
 const MyAchievements = () => {
   const data = [
     {
-      img: "https://paras759.github.io/GFG-Portfolio/img/coding.jpg",
-      p1: "Write your Coding achievements here",
-      p2: "Details about the Achievement",
+      img: "portfolio.png",
+      p1: "React, Tailwind CSS",
+      p2: "Frontend",
     },
     {
-      img: "https://paras759.github.io/GFG-Portfolio/img/hackathon.jpg",
-      p1: "Write your Hackathons achievements here",
-      p2: "Details about the Hackathon",
+      img: "https://paras759.github.io/GFG-Portfolio/img/extras.jpg",
+      p1: "E-commerce Store",
+      p2: "full stack",
     },
     {
       img: "https://paras759.github.io/GFG-Portfolio/img/extras.jpg",
